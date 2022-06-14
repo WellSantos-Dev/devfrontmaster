@@ -1,9 +1,7 @@
 import Stripe from 'stripe'
-import { version } from '../package.json'
-
 
 export const stripe = new Stripe(
-  process.env.STRIPE_SECRET_KEY,
+  'sk_test_51KtES5IMTDPlIEvm9XNhmgJPEM9jKEf0xCIr6iMe8fddV86BcxaGZxAYUbVyhDcR05H4Z12IYjiUj7iYohjZumba00MzmUj29D',
   {
     apiVersion: '2020-08-27',
     appInfo: {
