@@ -1,7 +1,10 @@
 import { signIn, signOut, useSession } from 'next-auth/react'
+import type { Adapter } from "next-auth/adapters"
 
 export const Header = () => {
-  const { data: session } = useSession()
+
+
+  const { data: session } : Adapter  = useSession()
 
   return (
     <div className="max-w-6xl p-8 flex items-center justify-between absolute left-0 right-0 ml-auto mr-auto shadow-lg">
