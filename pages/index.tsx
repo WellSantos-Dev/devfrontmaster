@@ -36,10 +36,7 @@ export const getServerSideProps : GetServerSideProps = async () => {
 
   const product = {
     priceId: price.id,
-    amount: new Intl.NumberFormat('pt-BR', {
-      style: 'currency',
-      currency: 'BRL',
-    }).format(price.unit_amount / 100),
+    amount: price.unit_amount
   }
 
   return {
